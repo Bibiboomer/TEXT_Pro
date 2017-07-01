@@ -1,0 +1,42 @@
+html,body{
+    padding:0px;
+    margin:0px;
+}
+.father{
+    width:400px;
+    height:400px;
+    position:absolute;
+    overflow: hidden;
+    background-color: #f00;
+}
+.father>*{
+    width:200px;
+    height:200px;
+    float:left;
+    position:relative;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    transition: all 0.55s;
+    background-color:#0f0;
+}
+/*.father:hover>.content{
+    border:10px solid #f00;
+}*/
+.father:hover>.son1{
+    top:-10px;
+    left:-10px;  
+}
+.father:hover>.son2{
+    top:-10px;
+    left:10px;  
+}
+.father:hover>.son3{
+    top:10px;
+    left:-10px;  
+}
+.father:hover>.son4{
+    top:10px;
+    left:10px;  
+}
