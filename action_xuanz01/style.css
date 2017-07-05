@@ -1,0 +1,42 @@
+html,body{
+    padding:0px;
+    height:0px;
+}
+.father{
+    width:400px;
+    height:400px;
+    background-color:#f00;
+    overflow: hidden;
+}
+.father>*{
+    float:left;
+    width:25%;
+    margin:12.5%;
+    height:25%;
+    /*子元素高度百分比是依据父元素计算*/
+    background-color: #0f0;
+    /*transition: all 0.55s;*/
+    position:relative;
+    top:0;
+    left:0;
+}
+.father:hover>.son1{
+    top:0px;
+    left:200px;
+    transition: all 0.55s;
+}
+.father:hover>.son2{
+    top:200px;
+    left:0px;
+    transition: all 0.55s;
+}
+.father:hover>.son3{
+    top:-200px;
+    left:0px;
+    transition: all 0.55s;
+}
+.father:hover>.son4{
+    top:0px;
+    left:-200px;
+    transition: all 0.55s;
+}
